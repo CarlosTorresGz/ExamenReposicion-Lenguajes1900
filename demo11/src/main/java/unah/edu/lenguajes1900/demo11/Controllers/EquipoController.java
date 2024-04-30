@@ -33,5 +33,10 @@ public class EquipoController {
     public Equipo buscarEquipo(@RequestParam long codigoEquipo){
         return this.equipoServiceImpl.buscarEquipo(codigoEquipo);
     }
+
+    @PostMapping("/simular")
+    public String simularPartidos(){
+        return this.equipoServiceImpl.simularPartidos();
+    }
     
 }

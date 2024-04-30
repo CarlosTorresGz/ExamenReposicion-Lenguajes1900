@@ -9,4 +9,6 @@ public interface EquipoService {
     public String eliminarEquipo(long codigoEquipo);
 
     public Equipo buscarEquipo(long codigoEquipo);
+
+    public String simularPartidos();
 }
